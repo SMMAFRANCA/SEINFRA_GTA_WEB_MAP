@@ -1,1 +1,0 @@
-var json_PlantioVoluntrio_23 = {"type":"FeatureCollection","name":"PlantioVoluntrio_23","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"fid":"1","Name":"PLANTIO VOLUNTÁRIO","area":3169.91,"quant":100.0},"geometry":{"type":"Point","coordinates":[-47.411561800901367,-20.55058586323603]}}]}

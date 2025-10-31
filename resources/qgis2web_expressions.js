@@ -763,30 +763,3 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
-
-
-
-function exp_label_StioNossaSenhoraAparecida_10_eval_expression(context) {
-    // 'Área: ' || area_m2 || ' m²'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (('Área: ' + feature.get('area_m2') ) + ' m²');
-    } else {
-        return (('Área: ' + feature.get('area_m2') ) + ' m²');
-    }
-}
-
-
-function exp_label_FazendaBarroPretoeBambus_11_eval_expression(context) {
-    // 'Área: ' || area_m2 || ' m²'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (('Área: ' + feature.get('area_m2') ) + ' m²');
-    } else {
-        return (('Área: ' + feature.get('area_m2') ) + ' m²');
-    }
-}

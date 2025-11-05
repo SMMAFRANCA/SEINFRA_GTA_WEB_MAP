@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_LoteamentosClandestinos_149 = function(feature, resolution){
+var style_reaInstitucional242unid136439212m_32 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,10 +9,10 @@ var style_LoteamentosClandestinos_149 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "13.0px \'Cambria\', sans-serif";
-    var labelFill = "#0091ca";
-    var bufferColor = "#ffffff";
-    var bufferWidth = 3.0;
+    var labelFont = "10px, sans-serif";
+    var labelFill = "#000000";
+    var bufferColor = "";
+    var bufferWidth = 0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
@@ -21,7 +21,7 @@ var style_LoteamentosClandestinos_149 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(253,145,7,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.748}),fill: new ol.style.Fill({color: 'rgba(255,255,255,0.5019607843137255)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.608}),fill: new ol.style.Fill({color: 'rgba(232,246,0,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

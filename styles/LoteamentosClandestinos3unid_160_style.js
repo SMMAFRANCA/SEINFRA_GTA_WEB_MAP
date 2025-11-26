@@ -9,20 +9,19 @@ var style_LoteamentosClandestinos3unid_160 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "13.0px \'Open Sans\', sans-serif";
-    var labelFill = "#323232";
-    var bufferColor = "#fafafa";
+    var labelFont = "13.0px \'Cambria\', sans-serif";
+    var labelFill = "#0091ca";
+    var bufferColor = "#ffffff";
     var bufferWidth = 3.0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("nome") !== null) {
-        labelText = String(feature.get("nome"));
+    if ("" !== null) {
+        labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(231,113,72,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(253,145,7,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.748}),fill: new ol.style.Fill({color: 'rgba(255,255,255,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

@@ -4,7 +4,15 @@ function categories_EmpreendimentoResidencialJabuticabeiras_53(feature, value, s
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
-                switch(valueStr) {case 'HATCH - AREA INSTITUCIONAL':
+                switch(valueStr) {case 'APP':
+                    return [ new ol.style.Style({
+        fill: new ol.style.Fill({color: 'rgba(0,191,255,0.5019607843137255)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'AREA INSTITUCIONAL':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(99,78,58,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -12,7 +20,7 @@ function categories_EmpreendimentoResidencialJabuticabeiras_53(feature, value, s
                               bufferWidth)
     })];
                     break;
-case 'HATCH - ÃREA VERDE':
+case 'AREA VERDE':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(10,65,28,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -20,7 +28,7 @@ case 'HATCH - ÃREA VERDE':
                               bufferWidth)
     })];
                     break;
-case 'HATCH - LOTES':
+case 'LOTES':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(188,171,167,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -28,7 +36,7 @@ case 'HATCH - LOTES':
                               bufferWidth)
     })];
                     break;
-case 'HATCH - PASSSEIO':
+case 'PASSEIO':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(67,127,86,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -36,9 +44,17 @@ case 'HATCH - PASSSEIO':
                               bufferWidth)
     })];
                     break;
-case 'HATCH - RUAS':
+case 'RUAS':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(81,83,86,0.5019607843137255)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'VIELA':
+                    return [ new ol.style.Style({
+        fill: new ol.style.Fill({color: 'rgba(71,25,76,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -53,8 +69,8 @@ var style_EmpreendimentoResidencialJabuticabeiras_53 = function(feature, resolut
     
     var labelText = ""; 
     var value = feature.get("layer");
-    var labelFont = "13.0px \'Open Sans\', sans-serif";
-    var labelFill = "#323232";
+    var labelFont = "10px, sans-serif";
+    var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";

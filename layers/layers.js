@@ -857,11 +857,13 @@ var lyr_EmpreendimentoResidencialJabuticabeiras_53 = new ol.layer.Vector({
                 popuplayertitle: 'Empreendimento Residencial Jabuticabeiras',
                 interactive: true,
     title: 'Empreendimento Residencial Jabuticabeiras<br />\
-    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_0.png" /> Área Institucional<br />\
-    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_1.png" /> Área Verde<br />\
-    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_2.png" /> Lotes/Quadras<br />\
-    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_3.png" /> Passeio<br />\
-    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_4.png" /> Ruas<br />' });
+    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_0.png" /> APP<br />\
+    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_1.png" /> AREA INSTITUCIONAL<br />\
+    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_2.png" /> AREA VERDE<br />\
+    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_3.png" /> LOTES<br />\
+    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_4.png" /> PASSEIO<br />\
+    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_5.png" /> RUAS<br />\
+    <img src="styles/legend/EmpreendimentoResidencialJabuticabeiras_53_6.png" /> VIELA<br />' });
 var format_EmpreendimentoResidencialJabuticabeiras_54 = new ol.format.GeoJSON();
 var features_EmpreendimentoResidencialJabuticabeiras_54 = format_EmpreendimentoResidencialJabuticabeiras_54.readFeatures(json_EmpreendimentoResidencialJabuticabeiras_54, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:31983'});

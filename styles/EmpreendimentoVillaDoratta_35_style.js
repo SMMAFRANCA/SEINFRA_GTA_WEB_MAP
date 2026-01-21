@@ -12,7 +12,7 @@ function categories_EmpreendimentoVillaDoratta_35(feature, value, size, resoluti
                               bufferWidth)
     })];
                     break;
-case 'ÃREA INSTITUCIONAL':
+case 'AREA INSTITUCIONAL':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(99,78,58,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -20,7 +20,15 @@ case 'ÃREA INSTITUCIONAL':
                               bufferWidth)
     })];
                     break;
-case 'ÃREA VERDE':
+case 'AREA LAZER':
+                    return [ new ol.style.Style({
+        fill: new ol.style.Fill({color: 'rgba(188,145,103,0.5019607843137255)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'AREA VERDE':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(10,65,28,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -28,7 +36,7 @@ case 'ÃREA VERDE':
                               bufferWidth)
     })];
                     break;
-case 'LOTES':
+case 'LOTES QUADRAS':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(188,171,167,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -36,15 +44,7 @@ case 'LOTES':
                               bufferWidth)
     })];
                     break;
-case 'LOTES ABERTOS':
-                    return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(99,123,192,0.5019607843137255)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-case 'PASSSEIO':
+case 'PASSEIO':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(67,127,86,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -55,6 +55,22 @@ case 'PASSSEIO':
 case 'RUAS':
                     return [ new ol.style.Style({
         fill: new ol.style.Fill({color: 'rgba(81,83,86,0.5019607843137255)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'VAGAS DE ESTACIONAMENTO':
+                    return [ new ol.style.Style({
+        fill: new ol.style.Fill({color: 'rgba(188,168,103,0.5019607843137255)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'VIELA':
+                    return [ new ol.style.Style({
+        fill: new ol.style.Fill({color: 'rgba(71,25,76,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

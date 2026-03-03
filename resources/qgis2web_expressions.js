@@ -763,3 +763,17 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function exp_label_PortaldosIndaias_190_eval_expression(context) {
+    // 'Portal dos Indaias - Matrícula 9.787' || '\n' || 'Área: ' || area || ' m²'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (((('Portal dos Indaias - Matrícula 9.787' + '\n') + 'Área: ') + feature.get('area') ) + ' m²');
+    } else {
+        return (((('Portal dos Indaias - Matrícula 9.787' + '\n') + 'Área: ') + feature.get('area') ) + ' m²');
+    }
+}

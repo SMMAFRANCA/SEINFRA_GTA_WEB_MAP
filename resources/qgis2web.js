@@ -4,15 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 21, minZoom: 1, projection: new ol.proj.Projection({
-            code: 'EPSG:31983',
-            //extent: [233773.359375, 7700979.946759, 276615.687500, 7740908.029506],
-            units: 'm'})
+         maxZoom: 28, minZoom: 1
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([233773.359375, 7700979.946759, 276615.687500, 7740908.029506], map.getSize());
+map.getView().fit([-5294034.422604, -2365379.333533, -5247727.449152, -2321972.271950], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -294,7 +291,7 @@ function onPointerMove(evt) {
                     highlightStyle = new ol.style.Style({
                         image: new ol.style.Circle({
                             fill: new ol.style.Fill({
-                                color: "rgba(255, 255, 0, 1.00)"
+                                color: "rgba(255, 255, 255, 1.00)"
                             }),
                             radius: radius
                         })
@@ -305,7 +302,7 @@ function onPointerMove(evt) {
 
                     highlightStyle = new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: 'rgba(255, 255, 0, 1.00)',
+                            color: 'rgba(255, 255, 255, 1.00)',
                             lineDash: null,
                             width: featureWidth
                         })
@@ -314,7 +311,7 @@ function onPointerMove(evt) {
                 } else {
                     highlightStyle = new ol.style.Style({
                         fill: new ol.style.Fill({
-                            color: 'rgba(255, 255, 0, 1.00)'
+                            color: 'rgba(255, 255, 255, 1.00)'
                         })
                     })
                 }
@@ -1114,22 +1111,11 @@ let measuring = false;
 //layerswitcher
 
 var layerSwitcher = new ol.control.LayerSwitcher({
-    activationMode: 'click',
-	startActive: true,
-	tipLabel: "Layers",
-    target: 'top-right-container',
-	collapseLabel: '»',
-	collapseTipLabel: 'Close'
-    });
+    tipLabel: "Layers",
+    target: 'top-right-container'
+});
 map.addControl(layerSwitcher);
-if (hasTouchScreen || isSmallScreen) {
-	document.addEventListener('DOMContentLoaded', function() {
-		setTimeout(function() {
-			layerSwitcher.hidePanel();
-		}, 500);
-	});	
-}
-
+    
 
 
 

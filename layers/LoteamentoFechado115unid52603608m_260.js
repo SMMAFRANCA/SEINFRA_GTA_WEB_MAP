@@ -1,0 +1,1 @@
+var json_LoteamentoFechado115unid52603608m_260 = {"type":"FeatureCollection","name":"LoteamentoFechado115unid52603608m_260","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"xy_coordinate_resolution":1e-07,"features":[]}

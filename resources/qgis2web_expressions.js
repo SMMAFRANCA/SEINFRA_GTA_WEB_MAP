@@ -777,3 +777,16 @@ function exp_label_PortaldosIndaias_47_eval_expression(context) {
         return (((('Portal dos Indaias - Matrícula 9.787' + '\n') + 'Área: ') + feature.get('area') ) + ' m²');
     }
 }
+
+
+function exp_label_FazendaPalestina105unid_205_eval_expression(context) {
+    // 'Faz. Palestina Matr: ' || matricula
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ('Faz. Palestina Matr: ' + feature.get('matricula') );
+    } else {
+        return ('Faz. Palestina Matr: ' + feature.get('matricula') );
+    }
+}
